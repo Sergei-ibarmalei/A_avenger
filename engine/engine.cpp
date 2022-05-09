@@ -139,7 +139,8 @@ bool Init_backs(sdl_t& sdl, backs_t& backs)
         ptr_f->Make_star(sdl.gRenderer);
         if (!ptr_f->Is_init())
         {
-            init_ok = false; break;
+            init_ok = false; 
+            return init_ok;
         }
     }
     for (;;ptr_s++)
@@ -148,7 +149,8 @@ bool Init_backs(sdl_t& sdl, backs_t& backs)
         ptr_s->Make_star(sdl.gRenderer);
         if (!ptr_s->Is_init())
         {
-            init_ok = false; break;
+            init_ok = false;
+            return init_ok;
         }
     }
 
